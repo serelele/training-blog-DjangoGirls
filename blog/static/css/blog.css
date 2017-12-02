@@ -1,0 +1,89 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style-type: none;
+	list-style: none;
+	-moz-box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
+
+}
+
+h1, h2, h3{
+	font-family: 'Oxygen', sans-serif;
+}
+
+h2{
+	font-weight: bold;
+}
+
+a{
+	font-weight: bold;
+	color:#EDA532;
+}
+
+/*header*/
+
+header{
+	padding: 30px 10px 30px 10px;
+	background-color: #298F87;
+	text-align: center;
+}
+
+header h1{
+	font-size: 4vw;
+	color: #fcfcfc;
+	font-weight: bold;
+	
+}
+
+header h2{
+	font-size: 2vw;
+	color: #fcfcfc;
+	font-family: 'Trocchi', serif;
+}
+
+/*first row*/
+
+.row{
+	padding: 50px 20px 30px 20px;
+}
+
+.row div.col{
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+/*django*/
+
+.django, .blog{
+	padding: 30px 60px 30px 60px;
+}
+
+/*blog*/
+
+.yellow{
+	background-color: #24B5AA;
+}
+
+.yellow a{
+	color: white;
+} 
+
+section.blog{
+	text-align: center;
+	color: white;
+}
+
+.post{
+	padding-top:10px;
+}
+
+.row div.col-6{
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+
+
+

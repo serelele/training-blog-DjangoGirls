@@ -1,33 +1,52 @@
-<html>
+{% load staticfiles %}
+<!DOCTYPE HTML>
+<html lang="it">
     <head>
-        <title>Ola's blog</title>
+    	<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Django Girls Python Blog</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700|Raleway:300,400,700|Trocchi" rel="stylesheet">
+       <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+		
     </head>
     <body>
     	<header>
-    		<h1>Blog-test creato in Python - Django Girls Milano 2017</h1>
+    		<h1><-Blog-test-creato-in-Python-></h1>
+    		<h2>Django Girls - Milano 2017</h2>
     	</header>
-    	<section>
-    		<h2>Perchè questo test</h2>
-	        <p>Ho creato questo blog durante la giornata di formazione organizzata da Django Girls Italia presso Mikamai, Milano, il 2 Dicembre 2017.</p>
-	    </section>
-	    <section>
+    	<section class="row">
+    		<div class="col first">
+	    		<h2>Perchè questo test</h2>
+		        <p>Ho creato questo blog durante la giornata di formazione organizzata da Django Girls Italia presso Mikamai, Milano, il 2 Dicembre 2017.</p>
+	   		</div>	    
+	    	<div class="col second">
 	    	<h2>La formazione</h2>
-	    	<p> Durante la giornata abbiamo seguito un tutorial online che ci ha permesso di acquisire le basi e gli strumenti per lavorare con Python, nello specifico con il framework Django. <a href="https://tutorial.djangogirls.org/it/">Clicca qui</a> per guardare il tutorial</p> 
+	    	<p> Durante la giornata abbiamo seguito un tutorial online che ci ha permesso di acquisire le basi e gli strumenti per lavorare con Python, nello specifico con il framework Django. <a href="https://tutorial.djangogirls.org/it/" target="_blank">Clicca qui</a> per guardare il tutorial</p> 
 	    </section>
-	    <section>
+	    <section class="django">
 	    	<h2>Cos'è Django Girls</h2>
-	    	<p> E' una community che promuove la conoscenza di Django, Python e in generale la programmazione nel genere femminile, e organizza giornate gratuite di formazione con dei tutor che seguono le ragazze nello studio del tutorial. <a href="https://djangogirls.org/">Qui</a> trovi il sito dell'organizzazione internazionale e <a href="https://www.facebook.com/djangogirls/">qui</a> la pagina Facebook della community in Italia</p>
+	    	<p> E' una community che promuove la conoscenza di Django, Python e in generale la programmazione nel genere femminile, e organizza giornate gratuite di formazione con dei tutor che seguono le ragazze nello studio del tutorial. <a href="https://djangogirls.org/" target="_blank">Qui</a> trovi il sito dell'organizzazione internazionale e <a href="https://www.facebook.com/djangogirls/" target="_blank">qui</a> la pagina Facebook della community in Italia</p>
 	    </section>
-	    <section>
-	    	<h2>Il blog</h2>
-	    	<p> Qui puoi trovare l'elenco dei miei post</p>
-	    	{% for post in posts %}
-	    	<div>
-	    		<p>Pubblicato: {{ post.published_date }}</p>
-	    		<h3><a href="">{{ post.title }}</a></h3>
-    			<p>{{ post.text|linebreaksbr }}</p>
-    		</div>
-			{% endfor %}
-	    </section>
+	    <section class="yellow">
+		    <section class="col-xs-12 blog">
+		    	<h2>Il blog</h2>
+		    	<p> Qui puoi trovare l'elenco dei miei post</p>
+		    </section>
+		    	<div class="row post">
+		    	{% for post in posts %}
+			    	<div class="col-6">
+			    		<p>Pubblicato: {{ post.published_date }}</p>
+			    		<h3><a href="">{{ post.title }}</a></h3>
+		    			<p>{{ post.text|linebreaksbr }}</p>
+		    		</div>
+				{% endfor %}
+				</div>
+		</section>
+
+	    <!--javascripts-->
+	    
+
     </body>
 </html>
