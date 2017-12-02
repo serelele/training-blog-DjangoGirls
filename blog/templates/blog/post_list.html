@@ -21,6 +21,13 @@
 	    <section>
 	    	<h2>Il blog</h2>
 	    	<p> Qui puoi trovare l'elenco dei miei post</p>
+	    	{% for post in posts %}
+	    	<div>
+	    		<p>Pubblicato: {{ post.published_date }}</p>
+	    		<h3><a href="">{{ post.title }}</a></h3>
+    			<p>{{ post.text|linebreaksbr }}</p>
+    		</div>
+			{% endfor %}
 	    </section>
     </body>
 </html>
