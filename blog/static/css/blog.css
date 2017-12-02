@@ -47,6 +47,7 @@ header h2{
 
 .row{
 	padding: 50px 20px 30px 20px;
+	margin-right: 0;
 }
 
 .row div.col{
