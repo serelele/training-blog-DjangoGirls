@@ -9,11 +9,14 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700|Raleway:300,400,700|Trocchi" rel="stylesheet">
        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+       <script src="https://use.fontawesome.com/1197606a02.js"></script>
 		
     </head>
     <body>
     	<header>
-    		<h1><-Blog-test-creato-in-Python-></h1>
+    		<a href="{% url 'post_new' %}" class="top-menu"><i class="fa fa-plus-circle fa-3x"></i></a>
+
+    		<h1><a href="/"><-Blog-test-creato-in-Python-></a></h1>
     		<h2>Django Girls - Milano 2017</h2>
     	</header>
     	<section class="row">

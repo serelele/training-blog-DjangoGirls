@@ -22,6 +22,14 @@ a{
 	color:#EDA532;
 }
 
+header a.top-menu{
+	display: inline-block;
+	height: 50px;
+	color: #ffffff;
+	text-align: right;
+}
+
+
 /*header*/
 
 header{
@@ -30,16 +38,21 @@ header{
 	text-align: center;
 }
 
-header h1{
+header h1 a{
 	font-size: 4vw;
 	color: #fcfcfc;
 	font-weight: bold;
-	
+	font-family: 'Oxygen', sans-serif;
+}
+
+
+header h1 a:hover{
+	color: #fcfcfc;
 }
 
 header h2{
 	font-size: 2vw;
-	color: #fcfcfc;
+	color: black;
 	font-family: 'Trocchi', serif;
 }
 
